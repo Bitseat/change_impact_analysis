@@ -1,0 +1,1 @@
+acceptance criteria   after clicking settings button found notification bell page   user redirected notifications setting page user able set notification preference  email� webnotification medium types     if user wants also update his her notification preference set previously   able update save it figma link

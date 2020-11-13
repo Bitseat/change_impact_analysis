@@ -1,0 +1,53 @@
+
+<div class="title-group">
+  <h1 class="mat-h1">Help Guide for the Change Impact Analysis</h1>
+  <mat-divider fxFlex="1 0"></mat-divider>
+</div>
+
+<!-- Form -->
+<div class="inner-wrapper">
+  
+    <mat-card>
+      <div class="controlers-wrapper">
+        <p><u>Criteria of the requirements dataset</u><br><br>
+          The user should arrange the requirement file of a given project holding existing issues
+according to the following criteria.
+        </p>
+        <p>● The file type should be csv<br>
+          ●  The first column should hold the issue key<br>
+          ● The second column should hold the issue description<br></p>
+        <p><u>Train model</u><br><br>
+          Whenever a user proceeds with the process of identifying the impact of a new or
+          changed requirement on existing requirements, she/he should follow the following steps.
+          Click on “Build Model “ sidebar menu on the left top and<br><br>
+          ●  Select the particular project name<br>
+          ●  Upload requirement file of the specific project<br>
+          ●  Click on “Train model”<br><br>
+          <img src="img/train.jpeg" style="width:350px;height:200px;"> 
+          Once the training is done, click on “Add requirement” sidebar menu on the left corner and<br>
+          ○  Enter new issue id<br>
+          ○  Enter the description of the new requirement<br>
+          ○  Click on “Check Similarity”</p> 
+
+      </div>
+    </mat-card>
+
+    <mat-card>
+      <p><u>Check Similarity</u><br>
+        The” view CIA result” window holds a table containing issue id , similarity value and the
+        description of the top 5 most related or most highly impacted requirements by the
+        addition of the new requirement into the project.<br><br>
+        <u>Verify validity of link between requirement and test case</u><br><br>
+        The requirement traceability sidebar menu on the left opens a page where the user enters the
+        description of a requirement and the corresponding test case she/he wants to validate with.
+        Then the model will give as an output whether the links between the two are valid or not
+        meaning, whether they have strong link or weak link respectively.</p>
+    </mat-card>
+    <mat-card>
+     
+    </mat-card>
+  
+  <br/>
+
+  
+</div>

@@ -1,0 +1,110 @@
+
+<div class="title-group">
+  <h1 class="mat-h1">Change Impact Analysis</h1>
+  <mat-divider fxFlex="1 0"></mat-divider>
+</div>
+
+<!-- Form -->
+<div class="inner-wrapper">
+  <!-- <form [formGroup]="candidateForm" (ngSubmit)="submitCandidateForm()" #resetCandidateForm="ngForm" novalidate> -->
+    <!-- Left block -->
+    <form [formGroup]="studentForm" (ngSubmit)="submitStudentForm()">
+     
+        <!-- Section -->
+        <mat-form-field>
+          <mat-label>Project Name</mat-label>
+          <mat-select
+           [(value)]="selected" formControlName="section">
+            <mat-option [value]="sectioinArray" *ngFor="let sectioinArray of SectioinArray">{{sectioinArray}}
+            </mat-option>
+          </mat-select>
+          <mat-error *ngIf="handleError('section', 'required')">
+            Project Name is required
+          </mat-error>
+        </mat-form-field>
+   
+
+    <!-- upload -->
+    <div class="column">
+      <nb-card>
+        <nb-card-body>
+            <div class="container fileUploadWrapper">
+          <!-- <form [formGroup]="uploadForm"> -->
+              <div class="row">
+                  <!-- Progress Bar -->
+                  <div class="col-md-12" *ngIf="progress">
+                      <div class="progress form-group">
+                          <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                              [style.width.%]="progress">
+                          </div>
+                      </div>
+                  </div>
+      
+                  <div class="col-md-12">
+                      <div class="fileupload" ngx-DragDropFileUpload (click)="fileField.click()"
+                          (fileDropped)="upload($event)">
+                          <span class="ddinfo">Choose a file or drag here</span>
+                          <input type="file" name="avatars" #fileField (change)="upload($event.target.files)" hidden multiple>
+                      </div>
+                  </div>
+                  <mat-progress-bar mode="determinate" [value]="value"></mat-progress-bar>
+      
+                  <div class="col-md-12">
+
+                      <div class="image-list" *ngFor="let file of fileArr; let i = index">
+                        <div class="profile">
+                            <img [src]="sanitize(file['url'])" alt="">
+                        </div>
+                       
+                        <div class="col-md-12" style="width: 100%;">
+                            
+                        <p><span>File Name: </span></p><input  formControlName="candidate_name" value={{file.item.name}}></div>
+                        
+                    </div>
+
+                      <p class="message">{{msg}}</p>
+                  </div>
+              </div>
+          <!-- </form> -->
+      </div>
+    </nb-card-body>
+      </nb-card>
+    </div>
+
+     <!--end  upload -->
+    <mat-card>
+      <div class="controlers-wrapper">
+        
+        
+      </div>
+    </mat-card>
+
+    <!-- Submit & Reset -->
+
+    <mat-card>
+      <div class="full-wrapper button-wrapper">
+        <div class="button-wrapper">
+          <!-- <button mat-flat-button color="primary" type="submit">Train Model</button> -->
+          <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+        </div>
+      </div>
+    </mat-card>
+    <mat-card>
+      <!-- <div class="full-wrapper button-wrapper"> -->
+        <!-- <div class="button-wrapper"> -->
+          <!-- <div class="col-md-12">
+           
+            <p class="message">{{msg}}</p>
+        </div> -->
+          <!-- <button mat-flat-button color="warn" type="submit">View Result</button> -->
+          <button mat-raised-button color="primary"  type="submit"
+            >Train Model</button>
+          <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    </mat-card>
+  </form>
+  <br/>
+
+  
+</div>

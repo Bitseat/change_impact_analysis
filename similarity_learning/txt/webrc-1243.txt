@@ -1,0 +1,1 @@
+A user page loading would like see acceptance indicator criteria given user selected thumbnail viewing show spinner loading loads page

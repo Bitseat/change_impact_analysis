@@ -1,0 +1,1 @@
+connect user like system auto generate collection note type phone call whenever call completed placed using click dial feature acceptance criteria call completed placed using click dial feature system auto generate collection note type phone call notes content follows logged userid called number dialed call lasted minutes eg ?cp pkk called 8641234567 call lasted 3 mins

@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "requirements Embeddings",
+      "tensorShape": [
+        101,
+        20
+      ],
+      "tensorPath": "https://raw.githubusercontent.com/Bitseat/embeddings_projector/master/cia_plot_tensor.tsv",
+      "metadataPath": "https://raw.githubusercontent.com/Bitseat/embeddings_projector/master/cia_plot_metadata.tsv"
+    }
+  ]
+}

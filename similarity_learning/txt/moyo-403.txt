@@ -1,0 +1,1 @@
+create functionality register trial users   acceptance criteria   as user i subscribe moyo trial period  

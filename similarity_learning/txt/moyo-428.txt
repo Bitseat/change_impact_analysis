@@ -1,0 +1,1 @@
+activities list core  data needs  roles  responsibility collection data activities  findings communication acceptance  criteria user view able list activities core add new core activities core edit activities

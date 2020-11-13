@@ -1,0 +1,1 @@
+as admin user   i able see organizations information per figma file dashboard page  

@@ -1,0 +1,51 @@
+
+<div class="title-group">
+  <h1 class="mat-h1">Test Requirements Traceability Model</h1>
+  <mat-divider fxFlex="1 0"></mat-divider>
+</div>
+
+<!-- Form -->
+<div class="inner-wrapper">
+ 
+    <form [formGroup]="studentForm" (ngSubmit)="submitStudentForm()">
+     
+    <mat-card>
+      <div class="controlers-wrapper">
+        <!-- Name -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Requirement" formControlName="candidate_name">
+          <mat-error *ngIf="handleError('candidate_name', 'required')">
+            You must provide a<strong>Requirement</strong>
+          </mat-error>
+        </mat-form-field>
+
+        <!-- Email -->
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Test case" formControlName="candidate_email">
+          <mat-error *ngIf="handleError('candidate_email', 'required')">
+            You must provide a<strong>Test case</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </mat-card>
+
+    <!-- Right block -->
+    <mat-card>
+      <div class="controlers-wrapper">
+        
+        
+      </div>
+    </mat-card>
+
+    <!-- Submit & Reset -->
+    <mat-card>
+      <div class="full-wrapper button-wrapper">
+        <div class="button-wrapper">
+          <button mat-flat-button color="primary" type="submit">View Link</button>
+          <!-- <button type="submit" class="btn btn-success">Submit</button> -->
+        </div>
+      </div>
+    </mat-card>
+  </form>
+  <br/>
+</div>

@@ -1,0 +1,1 @@
+As connect admin I want able view activities user I able view users activities know changed Acceptance Criteria Given user connect admin selects users activity Given user selects user enters date range clicks Search The report returned show Username Full name Activity Date Changes Previous data New Data New entries All changes found logs

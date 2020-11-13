@@ -1,0 +1,1 @@
+connect user using scan upload feature would like preview first scanned document default acceptance criteria first scanned document previewed default

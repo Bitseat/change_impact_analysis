@@ -1,0 +1,1 @@
+front implementation end storytelling crud operation tasks criteria acceptance ability create tasks should able update tasks should able delete tasks able should read tasks icon task show status corresponding status task progress overdue completed made changes task reflect calendar figma link
